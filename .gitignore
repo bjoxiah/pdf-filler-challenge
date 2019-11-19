@@ -1,0 +1,31 @@
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/wwwroot/filler/node_modules
+/wwwroot/filler/.pnp
+/wwwroot/filler.pnp.js
+
+# testing
+/wwwroot/filler/coverage
+
+# production
+/wwwroot/filler/build
+
+# misc
+/wwwroot/filler/.DS_Store
+/wwwroot/filler/.env.local
+/wwwroot/filler/.env.development.local
+/wwwroot/filler/.env.test.local
+/wwwroot/filler/.env.production.local
+
+/wwwroot/filler/npm-debug.log*
+/wwwroot/filler/yarn-debug.log*
+/wwwroot/filler/yarn-error.log*
+
+/Migrations
+/pdf
+/bin
+/obj
+/Properties
+appsettings.json

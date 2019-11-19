@@ -1,0 +1,8 @@
+fieldset {
+    border: 1px solid #ccc !important;
+}
+
+legend {
+    background: #fff099;
+    padding: 10px;
+}
