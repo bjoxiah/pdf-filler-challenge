@@ -80,7 +80,15 @@ class DashboardPage extends Component {
                 <Row>
                     <Col md="4" className="my-4">
                         <h5>Welcome, {this.state.username}</h5>
-                        <p>Hello, we have a pdf form to fill from our entries in the database for this project. But we currently don't have any enty in the database so add info.</p>
+                        <p>Hello, we have a pdf form to fill from our entries in the database for this project. 
+                            {
+                            (this.state.applicantList.length === 0)
+                            ? 
+                                "But we currently don't have any entry in the database so add some."
+                            : 
+                                ''
+                            }
+                        </p>
                         <div className="py-3">
                             <Button color="secondary" onClick={this.openApplicantModal.bind(this)}>Add New Applicant</Button>{' '}
                             <Button color="secondary" onClick={this.signout.bind(this)}>Sign Out</Button>

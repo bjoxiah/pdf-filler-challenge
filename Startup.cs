@@ -80,7 +80,8 @@ namespace vanhack_pdf_filler
             app.UseMvc();
             // app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials() );
             app.UseCors("CorsPolicy");
-            // app.UseAuthentication();         
+            // app.UseAuthentication();    
+             
             app.UseMvc(routes => {
                 routes.MapSpaFallbackRoute(
                     name: "spa-fallback",
